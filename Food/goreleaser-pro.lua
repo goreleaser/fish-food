@@ -15,8 +15,8 @@ food = {
             sha256 = "90583a555fab20d97e04190862f4966ab02fc21b83010b44d23e9107baa0b359",
             resources = {
                 {
-                    path = "goreleaser.exe.exe",
-                    installpath = "bin\\goreleaser.exe.exe",
+                    path = "goreleaser.exe",
+                    installpath = "bin\\goreleaser.exe",
                 }
             }
         },
@@ -66,8 +66,8 @@ food = {
             sha256 = "4b7bf1ae95580d74c52e9216d5dd884e014254ac911f1dd34f6e4a614f43ea7d",
             resources = {
                 {
-                    path = "goreleaser.exe.exe",
-                    installpath = "bin\\goreleaser.exe.exe",
+                    path = "goreleaser.exe",
+                    installpath = "bin\\goreleaser.exe",
                 }
             }
         },
@@ -91,8 +91,8 @@ food = {
             sha256 = "e9aba88f3a97aa6d60a44cd40828773c96cc395c62ad72a606e0c8ed834124c1",
             resources = {
                 {
-                    path = "goreleaser.exe.exe",
-                    installpath = "bin\\goreleaser.exe.exe",
+                    path = "goreleaser.exe",
+                    installpath = "bin\\goreleaser.exe",
                 }
             }
         },
