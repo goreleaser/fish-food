@@ -1,5 +1,5 @@
 local name = "nfpm"
-local version = "2.7.1"
+local version = "2.8.0"
 
 food = {
     name = name,
@@ -11,8 +11,8 @@ food = {
         {
             os = "windows",
             arch = "arm64",
-            url = "https://github.com/goreleaser/nfpm/releases/download/v2.7.1/nfpm_2.7.1_Windows_arm64.zip",
-            sha256 = "03e4f2a37d806e92f93f2848ab9345c4f0a18a8e1809d7adb17ef9f8817f091c",
+            url = "https://github.com/goreleaser/nfpm/releases/download/v2.8.0/nfpm_2.8.0_Windows_arm64.zip",
+            sha256 = "3434994172a11e40bc2d6516682101507705b09fbc917120601770436890ae42",
             resources = {
                 {
                     path = "nfpm.exe",
@@ -23,8 +23,21 @@ food = {
         {
             os = "linux",
             arch = "arm64",
-            url = "https://github.com/goreleaser/nfpm/releases/download/v2.7.1/nfpm_2.7.1_Linux_arm64.tar.gz",
-            sha256 = "258426c7be38d363de330353bdeff30fb4d55b0dc5ba27da663413a2b6326d6e",
+            url = "https://github.com/goreleaser/nfpm/releases/download/v2.8.0/nfpm_2.8.0_Linux_arm64.tar.gz",
+            sha256 = "0db45be7c34d6ea1955710dd71eefc5a79a488e7ee44d816407d366a511ced6a",
+            resources = {
+                {
+                    path = "nfpm",
+                    installpath = "bin/nfpm",
+                    executable = true
+                },
+            }
+        },
+        {
+            os = "darwin",
+            arch = "arm64",
+            url = "https://github.com/goreleaser/nfpm/releases/download/v2.8.0/nfpm_2.8.0_Darwin_arm64.tar.gz",
+            sha256 = "26c4aee3d49df4a5d3c592ba4fc02a2ea6e71e1d5302d21ebd12556ed5c90575",
             resources = {
                 {
                     path = "nfpm",
@@ -36,8 +49,8 @@ food = {
         {
             os = "windows",
             arch = "amd64",
-            url = "https://github.com/goreleaser/nfpm/releases/download/v2.7.1/nfpm_2.7.1_Windows_x86_64.zip",
-            sha256 = "b126cc202638d7d4264567eb85359b575916a6c978d2147900f38ced6b74a5cf",
+            url = "https://github.com/goreleaser/nfpm/releases/download/v2.8.0/nfpm_2.8.0_Windows_x86_64.zip",
+            sha256 = "eb8e7eed6421b8f7a5b6a74899055b83e074af09de2a8c2547dfe78a98337d7b",
             resources = {
                 {
                     path = "nfpm.exe",
@@ -46,23 +59,10 @@ food = {
             }
         },
         {
-            os = "darwin",
-            arch = "arm64",
-            url = "https://github.com/goreleaser/nfpm/releases/download/v2.7.1/nfpm_2.7.1_Darwin_arm64.tar.gz",
-            sha256 = "aab245e414edfc8efe976292cb08a52b0ec1fd2f81214615d132c2ed68d34f95",
-            resources = {
-                {
-                    path = "nfpm",
-                    installpath = "bin/nfpm",
-                    executable = true
-                },
-            }
-        },
-        {
             os = "linux",
             arch = "amd64",
-            url = "https://github.com/goreleaser/nfpm/releases/download/v2.7.1/nfpm_2.7.1_Linux_x86_64.tar.gz",
-            sha256 = "32e2152c6c84f292206934153d536e5999213faf35795510c5085db11b04372c",
+            url = "https://github.com/goreleaser/nfpm/releases/download/v2.8.0/nfpm_2.8.0_Linux_x86_64.tar.gz",
+            sha256 = "13ef1215b0aced88b9f96cb6e35f9b0647eb70ecbf22c0af87b7c2de2c6e9b07",
             resources = {
                 {
                     path = "nfpm",
@@ -74,8 +74,8 @@ food = {
         {
             os = "darwin",
             arch = "amd64",
-            url = "https://github.com/goreleaser/nfpm/releases/download/v2.7.1/nfpm_2.7.1_Darwin_x86_64.tar.gz",
-            sha256 = "6d8ec6285703ffdd755440540782acf696d91f3a84cda242d0c13910337ebac5",
+            url = "https://github.com/goreleaser/nfpm/releases/download/v2.8.0/nfpm_2.8.0_Darwin_x86_64.tar.gz",
+            sha256 = "ba8283ec45960d93c319daf227176b669a11741a354659bececf906ff1171ca2",
             resources = {
                 {
                     path = "nfpm",
