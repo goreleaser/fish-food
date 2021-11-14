@@ -1,5 +1,5 @@
 local name = "nfpm"
-local version = "2.9.1"
+local version = "2.9.2"
 
 food = {
     name = name,
@@ -9,10 +9,22 @@ food = {
     version = version,
     packages = {
         {
+            os = "windows",
+            arch = "arm64",
+            url = "https://github.com/goreleaser/nfpm/releases/download/v2.9.2/nfpm_2.9.2_Windows_arm64.zip",
+            sha256 = "9a60c8e67e64808cce09e8b2ce1648a9a0ea1fe02de97e22c594a452ba31f769",
+            resources = {
+                {
+                    path = "nfpm.exe",
+                    installpath = "bin\\nfpm.exe",
+                },
+            }
+        },
+        {
             os = "linux",
-            arch = "amd64",
-            url = "https://github.com/goreleaser/nfpm/releases/download/v2.9.1/nfpm_2.9.1_Linux_x86_64.tar.gz",
-            sha256 = "b7c6b9b77cabbd1e9239dfa7f231cbbad8f236d6543df90591ca4af623504989",
+            arch = "arm64",
+            url = "https://github.com/goreleaser/nfpm/releases/download/v2.9.2/nfpm_2.9.2_Linux_arm64.tar.gz",
+            sha256 = "00cda7b73f312a4d740c7417555a4e11e6adbadfcb6837d17d022d87818e5c1b",
             resources = {
                 {
                     path = "nfpm",
@@ -24,8 +36,8 @@ food = {
         {
             os = "darwin",
             arch = "arm64",
-            url = "https://github.com/goreleaser/nfpm/releases/download/v2.9.1/nfpm_2.9.1_Darwin_arm64.tar.gz",
-            sha256 = "8ae6714d7ea876400cc8749c80c94f629690e3a6910a54c86b6ff75447d41a1a",
+            url = "https://github.com/goreleaser/nfpm/releases/download/v2.9.2/nfpm_2.9.2_Darwin_arm64.tar.gz",
+            sha256 = "01dd3506399110c797a1755e3a87eeeb515cddf85d063f7caee3abd932940792",
             resources = {
                 {
                     path = "nfpm",
@@ -36,34 +48,21 @@ food = {
         },
         {
             os = "windows",
-            arch = "arm64",
-            url = "https://github.com/goreleaser/nfpm/releases/download/v2.9.1/nfpm_2.9.1_Windows_arm64.zip",
-            sha256 = "e5a7159e996a2974a249717f462013e648929d6d3b431a0f12fccf24f3b4cf63",
+            arch = "amd64",
+            url = "https://github.com/goreleaser/nfpm/releases/download/v2.9.2/nfpm_2.9.2_Windows_x86_64.zip",
+            sha256 = "70a9496af3b77afda22648c1bcb73b26af4fbb4070df81f6a60368c974f11a0e",
             resources = {
                 {
                     path = "nfpm.exe",
                     installpath = "bin\\nfpm.exe",
-                },
-            }
-        },
-        {
-            os = "linux",
-            arch = "arm64",
-            url = "https://github.com/goreleaser/nfpm/releases/download/v2.9.1/nfpm_2.9.1_Linux_arm64.tar.gz",
-            sha256 = "c1981576c1c01b3d4819b021702633d8e6d355d6a360c48c130cb65c08ae32d6",
-            resources = {
-                {
-                    path = "nfpm",
-                    installpath = "bin/nfpm",
-                    executable = true
                 },
             }
         },
         {
             os = "darwin",
             arch = "amd64",
-            url = "https://github.com/goreleaser/nfpm/releases/download/v2.9.1/nfpm_2.9.1_Darwin_x86_64.tar.gz",
-            sha256 = "6ee49195a41911bed91d535c88bb886e18680d628eda1a826419ed2adc61720b",
+            url = "https://github.com/goreleaser/nfpm/releases/download/v2.9.2/nfpm_2.9.2_Darwin_x86_64.tar.gz",
+            sha256 = "4b886ee52cda8ce8523f790e131e5cee768cb797b47510ce26f7db4a6a5089d7",
             resources = {
                 {
                     path = "nfpm",
@@ -73,14 +72,15 @@ food = {
             }
         },
         {
-            os = "windows",
+            os = "linux",
             arch = "amd64",
-            url = "https://github.com/goreleaser/nfpm/releases/download/v2.9.1/nfpm_2.9.1_Windows_x86_64.zip",
-            sha256 = "5b02e6cff2bfce21009ba874423636f2971de8a4abeec5c473fd5a0503136840",
+            url = "https://github.com/goreleaser/nfpm/releases/download/v2.9.2/nfpm_2.9.2_Linux_x86_64.tar.gz",
+            sha256 = "f6c19da083dbfd07332374e904780ff6a829c0d2503a74f93a1cf465a33ad57f",
             resources = {
                 {
-                    path = "nfpm.exe",
-                    installpath = "bin\\nfpm.exe",
+                    path = "nfpm",
+                    installpath = "bin/nfpm",
+                    executable = true
                 },
             }
         },
