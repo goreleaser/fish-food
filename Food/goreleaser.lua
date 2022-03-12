@@ -1,5 +1,5 @@
 local name = "goreleaser"
-local version = "1.6.1"
+local version = "1.6.2"
 
 food = {
     name = name,
@@ -10,72 +10,72 @@ food = {
     packages = {
         {
             os = "linux",
-            arch = "arm64",
-            url = "https://github.com/goreleaser/goreleaser/releases/download/v1.6.1/goreleaser_Linux_arm64.tar.gz",
-            sha256 = "7de6659940530b019239a1c161d91cca198849a0fb4578c6247c69c322f8ef78",
-            resources = {
-                {
-                    path = "goreleaser",
-                    installpath = "bin/goreleaser",
-                    executable = true
-                },
-            }
-        },
-        {
-            os = "windows",
             arch = "amd64",
-            url = "https://github.com/goreleaser/goreleaser/releases/download/v1.6.1/goreleaser_Windows_x86_64.zip",
-            sha256 = "88185adb4e93313e9e0f5c6504d082ab0c525c58b14f2ac68650afa4e918af3d",
-            resources = {
-                {
-                    path = "goreleaser.exe",
-                    installpath = "bin\\goreleaser.exe",
-                },
-            }
-        },
-        {
-            os = "darwin",
-            arch = "amd64",
-            url = "https://github.com/goreleaser/goreleaser/releases/download/v1.6.1/goreleaser_Darwin_x86_64.tar.gz",
-            sha256 = "048fb384ad43755522f1115a6b4736ef1b60e611943136cbf7fdaf7cf813ecc5",
+            url = "https://github.com/goreleaser/goreleaser/releases/download/v1.6.2/goreleaser_Linux_x86_64.tar.gz",
+            sha256 = "d5fb23e477ade655e958c79f790f7f165dc669452e823c8c5e7cc5fefdd953f5",
             resources = {
                 {
                     path = "goreleaser",
                     installpath = "bin/goreleaser",
                     executable = true
-                },
-            }
-        },
-        {
-            os = "darwin",
-            arch = "arm64",
-            url = "https://github.com/goreleaser/goreleaser/releases/download/v1.6.1/goreleaser_Darwin_arm64.tar.gz",
-            sha256 = "171f8f0f868b13db991def61098a17ce269c10e70bd9f80d791c8f9ba2a4f8d2",
-            resources = {
-                {
-                    path = "goreleaser",
-                    installpath = "bin/goreleaser",
-                    executable = true
-                },
-            }
-        },
-        {
-            os = "windows",
-            arch = "arm64",
-            url = "https://github.com/goreleaser/goreleaser/releases/download/v1.6.1/goreleaser_Windows_arm64.zip",
-            sha256 = "4afc208fda93a97db3254c8a5f895a0e9085790a467018b7872a770b3ef720d1",
-            resources = {
-                {
-                    path = "goreleaser.exe",
-                    installpath = "bin\\goreleaser.exe",
                 },
             }
         },
         {
             os = "linux",
+            arch = "arm64",
+            url = "https://github.com/goreleaser/goreleaser/releases/download/v1.6.2/goreleaser_Linux_arm64.tar.gz",
+            sha256 = "25c23211b1c42a7bd9889f2a2c89bb4a826d5d1ed5d835608b3822fecf20549e",
+            resources = {
+                {
+                    path = "goreleaser",
+                    installpath = "bin/goreleaser",
+                    executable = true
+                },
+            }
+        },
+        {
+            os = "windows",
             arch = "amd64",
-            url = "https://github.com/goreleaser/goreleaser/releases/download/v1.6.1/goreleaser_Linux_x86_64.tar.gz",
-            sha256 = "46758083ed5afbf1a918df5abd82d740684e4d7d36364f9a1e09a4c4badab985",
+            url = "https://github.com/goreleaser/goreleaser/releases/download/v1.6.2/goreleaser_Windows_x86_64.zip",
+            sha256 = "faf92af92e749a4496c5174f549ed76b5812526113e05bb9b4fac369cdfb18c0",
+            resources = {
+                {
+                    path = "goreleaser.exe",
+                    installpath = "bin\\goreleaser.exe",
+                },
+            }
+        },
+        {
+            os = "windows",
+            arch = "arm64",
+            url = "https://github.com/goreleaser/goreleaser/releases/download/v1.6.2/goreleaser_Windows_arm64.zip",
+            sha256 = "8cb83da7a1cd7be547df0dee42dc82d1d93964760e2fc00bcc77e3cfccff744b",
+            resources = {
+                {
+                    path = "goreleaser.exe",
+                    installpath = "bin\\goreleaser.exe",
+                },
+            }
+        },
+        {
+            os = "darwin",
+            arch = "arm64",
+            url = "https://github.com/goreleaser/goreleaser/releases/download/v1.6.2/goreleaser_Darwin_arm64.tar.gz",
+            sha256 = "676fa9ef91cf53d87f43809cee5c34540cd1a248fb11ee014bc758f6c7ee66e1",
+            resources = {
+                {
+                    path = "goreleaser",
+                    installpath = "bin/goreleaser",
+                    executable = true
+                },
+            }
+        },
+        {
+            os = "darwin",
+            arch = "amd64",
+            url = "https://github.com/goreleaser/goreleaser/releases/download/v1.6.2/goreleaser_Darwin_x86_64.tar.gz",
+            sha256 = "6d7292cabbeb1e964e824e23b10ae2ad9852df1e693974e59764642c41cb8ac9",
             resources = {
                 {
                     path = "goreleaser",
